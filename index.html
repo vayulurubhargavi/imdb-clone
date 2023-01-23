@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <!-- To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag  -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>IMDB-CLONE</title>
+        <link rel="icon" type="image/x-icon" href="images/imdb-favicon.jpeg">
+
+        <!-- link bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- link fontawesome  -->
+        <script
+        src="https://kit.fontawesome.com/a8162db7fd.js" crossorigin="anonymous"></script>
+        
+
+        <!-- link css  -->
+        <!-- <link rel="stylesheet" href="css/index.css" > -->
+
+        <link rel="stylesheet" type="text/css"  href="/css/index.css"  />
+    </head>
+    <body>
+        <!-- the navigation bar  contains search bar and search button  -->
+
+        <!-- As a link -->
+        <nav class="navbar  bg-dark  sticky-top">
+            <div class="container-fluid">
+                <!-- add an app logo -->
+                <a class="navbar-brand " href="#">
+                <img src="images/moviecarnival-logo.jpg" alt="movie-carnival logo" height="45px" width="45px" class="d-inline-block" >
+                <span class="app-name fst-italic fs-3 fw-bolder font-monospace">IMDB-CLONE</span>
+                </a>
+                <!-- add a search bar -->
+                <div id="search-bar" class="mx-auto">
+                    <form action="" >
+                    <input type="search" placeholder="search .."  id="search">
+                    <button id="search-btn"><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                    </form>
+
+                </div>
+                <!-- show favourites -->
+                <div id="show-favourites"><i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+        </nav>
+       
+       <div id="super-container" class="d-flex ">
+       <!-- main section -->
+            <main id="main-section">
+            <!-- Suggestions container-->
+                <div id="Suggestions-container" class="d-flex">
+                        <p id="empty-search-text" class=" fs-2 pt-3 ms-3">
+                        Your search results will appear hear!
+                        </p>
+            
+                        <div id="card-container">
+                        </div>
+                </div>
+            </main>
+       
+ 
+        <!-- favourites section -->
+        <section id="favorites-section" ">
+            <h2 class="text-center">Favorites</h2>
+    
+            <div id="empty-fav-text">
+              <p class="fs-4 p-2 ">
+                Click on <i class="fa-heart fa-solid "></i> icon of movies
+                to add.
+              </p>
+            </div>
+    
+            <div id="fav-movies-container" class=".flex-column mx-auto">
+            </div>
+        </section>
+      </div> 
+    
+            
+            
+     <script src="js/index.js"></script>
+
+    </body>
+    </html>

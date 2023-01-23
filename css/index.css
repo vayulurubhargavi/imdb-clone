@@ -1,0 +1,237 @@
+/* navigation bar ------------------------------------------------- */
+/* app logo name */
+.app-name
+{
+    color:magenta;
+    
+}
+
+/* search bar and search icon */
+#search-bar {
+    
+    width: 50vw;
+  }
+
+form {
+   
+   
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  /* styling search bar field */
+  input {
+    width: 90%;
+    height: 2.5rem;
+    outline: none;
+    padding: 1.5rem;
+    border: 0;
+    background-color:#d5d0d0
+   
+    
+  }
+ 
+/* searcjh button and search icon */
+#search-btn
+{
+    height: 3rem;
+    width: 4.5rem;
+    border: transparent;
+    background-color:#543f58;
+}
+.search-icon
+{
+     font-size: 25px;
+     color:magenta
+
+}
+
+/* for favourites section */
+#show-favourites {
+
+     color:magenta; 
+    font-size: 1.5rem;
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+
+ /* MAIN SECTION */
+
+#main-section {
+  min-height: 89vh;
+  width: 65%;
+}
+
+h2{
+  color:red;
+}
+
+#Suggestions-container {
+  min-height: 100%;
+  justify-content: center;
+  padding: 2rem;
+  background-color: cyan;
+}
+
+#card-container {
+  width: inherit;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+/* favourites section */
+#favorites-section {
+  width: 33%;
+  height: 100vh;
+  background-color: yellowgreen;
+
+  flex-direction: column;
+}
+
+
+
+#fav-movies-container {
+  overflow-y: scroll;
+  width: 90%;
+  height: 90%;
+}
+
+
+/* Scrollbar customisation */
+
+ #fav-movies-container::-webkit-scrollbar {
+  width: 5px;
+} 
+
+ /*Track */
+ #fav-movies-container::-webkit-scrollbar-track {
+  border-radius: 20px;
+} 
+
+
+
+.fav-movie-card {
+  padding-right: 1rem;
+  width: 95%;
+  background-color: lightpink;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fav-movie-poster {
+  width: 80px;
+  height: 100px;
+}
+
+.fav-movie-name {
+  
+  color: lightcoral
+}
+
+.fav-movie-name:hover {
+  color: red;
+  text-decoration: underline
+}
+
+.movie-card-details {
+  width: 60%;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.fa-trash-can {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.fa-trash-can:hover {
+  color: black
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1200px) {
+  #card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #favorites-section {
+    width: 40vw;
+    height: 100vh;
+  }
+
+  #card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-name{
+    display: none;
+  }
+
+  #favorites-section {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+  }
+
+  #show-favourites {
+    padding-right: 1rem;
+    display: block;
+  }
+
+  #main-section {
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  #card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #search-bar {
+    margin-left: 3%;
+    height: 35px;
+    width: 55vw;
+    padding-bottom: 2.5rem;
+  }
+
+  #show-favourites {
+    padding-right: 0.1rem;
+  }
+
+  #card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 9rem;
+  }
+
+  #favorites-section {
+    width: 100vw;
+    height: 100vh;
+  }
+}

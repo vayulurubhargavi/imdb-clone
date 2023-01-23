@@ -1,0 +1,60 @@
+/* NAVBAR */
+
+  .app-name
+{
+    color:magenta;
+    
+}
+  
+  /* Movie card*/
+  .card {
+    
+    box-shadow: 0px 16px 24px 2px hsl(0deg 82% 47% / 14%), 0px 6px 30px 5px hsl(248deg 83% 45% / 12%), 0px 8px 10px -5px hsl(117deg 84% 47% / 20%);
+  }
+  
+  .card-text {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: orange
+  }
+  
+  .info-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: green
+  }
+  
+  .information {
+    font-weight: 500;
+    font-size: 1.1em;
+    color:red
+  }
+  
+  
+  /* Responsiveness */
+  @media screen and (max-width: 767px) {
+    #poster {
+      margin-top: 1rem;
+      border-radius: 5px !important;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    #title {
+      font-size: x-large;
+    }
+  
+    h6 {
+      font-size: medium;
+    }
+  
+    h5 {
+      font-size: medium;
+    }
+  
+    #poster {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }

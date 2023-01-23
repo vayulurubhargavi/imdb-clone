@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Page</title>
+    <link rel="icon" type="image/x-icon" href="images/imdb-favicon.jpeg">
+
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- link fontawesome  -->
+    <script
+    src="https://kit.fontawesome.com/a8162db7fd.js" crossorigin="anonymous"></script>
+    <!-- link css  -->
+    <link rel="stylesheet" href="./css/movie.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar  bg-dark px-2">
+      <div class="container-fluid">
+            <!-- add an app logo -->
+        <a class="navbar-brand" href="# ">
+          <img src="images/moviecarnival-logo.jpg" alt="movie-carnival logo" height="45px" width="45px" class="d-inline-block" >
+          <span class="app-name fst-italic fs-3 fw-bolder font-monospace">MOVIE-CARNIVAL</span>
+        </a>
+        <a href="index.html">
+          <button type="button" class="btn btn-warning">
+            <i class="fa-solid fa-angle-left"></i> Go Back
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!-- MAIN container -->
+    <main class="container-fluid justify-content-center my-5">
+      <!-- movie title and movie rating container -->
+      <div class="d-flex justify-content-between  mx-auto" style="max-width: 70vw">
+        <div>
+          <h1 id="title">Movie name</h1>
+          <p id="year" class="text-info d-inline">----</p>
+          <span id="runtime" class="ms-4 text-info"> -- min</span>
+        </div>
+
+        <div>
+          <h6 class="mt-2 text-warning">Rating</h6>
+          <h5 class="mt-1">
+            <i class="fa-solid fa-star"></i> <span id="rating"> 9.5/10 </span>
+          </h5>
+        </div>
+      </div>
+
+      <!-- Movie card -->
+      <div class="card  mx-auto " style="max-width: 70vw" >
+        <div class="row g-0">
+          <!-- movie image poster -->
+          <div class="col-md-3 d-flex justify-content-center ">
+            <img id="poster" class="img-fluid rounded-start" style="max-height: 400px"    />
+          </div>
+          <!-- extra information about the movie  -->
+          <div class="col-md-8 my-2">
+            <div class="card-body mt-3">
+              <h5 class="card-title">Plot</h5>
+              <p class="card-text" id="plot">_ _ _</p>
+
+              <p class="info-type">
+                Directors :
+                <span id="director-names" class="information">_ _ _</span>
+              </p>
+              <p class="info-type">
+                Cast :
+                <span id="cast-names" class="information">_ _ _</span>
+              </p>
+              <p class="info-type">
+                Genre :
+                <span id="genre" class="information">_ _ _</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/movie.js"></script>
+  </body>
+</html>
